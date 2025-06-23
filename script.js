@@ -9,7 +9,7 @@ for (let i = 1; i <= 100; i++) {
   const caption = `Photo ${i}`;
 
   card.innerHTML = `
-    <img src="images/photo${i}.jpg" alt="${caption}">
+    <img src="photo${i}.jpg" alt="${caption}">
     <div class="photo-caption">${caption}</div>
   `;
 
