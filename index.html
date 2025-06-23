@@ -5,15 +5,17 @@
  
   <title>Private Access</title>
   <script>
-    function checkPassword() {
-      const input = document.getElementById('password').value;
-      if (input === '@786@') {
-        window.location.href = 'mainfamily.html'; // actual site
-      } else {
-        alert('Incorrect password!');
-      }
+  function checkPassword() {
+    const input = document.getElementById('password').value;
+    if (input === 'secret123') {
+      localStorage.setItem('authenticated', 'yes'); // ✅ store login flag
+      window.location.href = 'main.html';
+    } else {
+      alert('Incorrect password!');
     }
-  </script>
+  }
+</script>
+
 </head>
 <body>
   <h2>This site is protected</h2>
