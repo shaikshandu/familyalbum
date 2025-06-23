@@ -18,3 +18,10 @@
   <script src="script.js"></script>
 </body>
 </html>
+<script>
+  // Redirect if not authenticated
+  if (localStorage.getItem('authenticated') !== 'yes') {
+    window.location.href = 'index.html';
+  }
+</script>
+
